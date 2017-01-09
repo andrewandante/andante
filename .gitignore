@@ -23,3 +23,6 @@ _ss_environment.php
 
 # ignore assets
 /assets/
+
+# ignore phpstorm stuff
+/.idea/
