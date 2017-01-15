@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7cecc4f50963be64dbfb4ded687be46f",
-    "content-hash": "950c8e9c681ae235d991457f6538315b",
+    "hash": "3fc4c0e40feb0e434876ecaf8f36c577",
+    "content-hash": "95e65e1e5447cb5f064c14f21aeab5de",
     "packages": [
         {
             "name": "assertchris/hash-compat",
@@ -191,6 +191,46 @@
                 "zikula"
             ],
             "time": "2016-08-13 20:53:52"
+        },
+        {
+            "name": "jonom/silverstripe-betternavigator",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jonom/silverstripe-betternavigator.git",
+                "reference": "58fe5c8dd6f905e469b754cd53b81baa9fac542d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jonom/silverstripe-betternavigator/zipball/58fe5c8dd6f905e469b754cd53b81baa9fac542d",
+                "reference": "58fe5c8dd6f905e469b754cd53b81baa9fac542d",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "~3.1"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "betternavigator"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathon Menz",
+                    "homepage": "http://jonathonmenz.com"
+                }
+            ],
+            "description": "Front-end utility menu for SilverStripe websites featuring administration and development tools",
+            "keywords": [
+                "BetterNavigator",
+                "SilverStripeNavigator",
+                "navigator",
+                "silverstripe"
+            ],
+            "time": "2016-07-22 22:26:01"
         },
         {
             "name": "silverstripe/blog",

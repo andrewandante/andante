@@ -20,6 +20,7 @@ _ss_environment.php
 /reports/
 /siteconfig/
 /tagfield/
+/betternavigator/
 
 # ignore assets
 /assets/

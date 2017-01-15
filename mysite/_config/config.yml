@@ -11,3 +11,17 @@ SSViewer:
   theme: 'future-imperfect'
 Debug:
   friendly_error_httpcode: true
+SiteConfig:
+  extensions:
+    - SiteConfigExtension
+BlogPost:
+  extensions:
+    - BlogPostExtension
+SiteTree:
+  extensions:
+    - CommentsExtension
+  comments:
+    require_moderation_cms: true
+Comment:
+  extensions:
+    - CommentExtension

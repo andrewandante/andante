@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>At a Walking Speed</title>
+	<title>$SiteConfig.Title</title>
 	<% base_tag %>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -15,13 +15,13 @@
 <!-- Wrapper -->
 <div id="wrapper">
 
+	$BetterNavigator
 	<% include Header %>
 	<% include Menu %>
 
 	<!-- Main -->
 	<div id="main">
 		$Layout
-		$Content
 		$Form
 	</div>
 
