@@ -1,4 +1,8 @@
 <?php
+
+use SilverStripe\CMS\Model\SiteTree;
+use SilverStripe\CMS\Controllers\ContentController;
+
 class Page extends SiteTree {
 
 	private static $db = array(
@@ -8,7 +12,7 @@ class Page extends SiteTree {
 	);
 
 }
-class Page_Controller extends ContentController {
+class PageController extends ContentController {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the

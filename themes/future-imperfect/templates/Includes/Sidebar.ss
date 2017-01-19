@@ -3,7 +3,7 @@
 
 	<!-- Intro -->
 	<section id="intro">
-		$SiteConfig.SiteLogo
+		$SiteConfig.SiteLogo.ScaleWidth(368)
 		<header>
 			<h2>$SiteConfig.Title</h2>
 			<p>$SiteConfig.Tagline</p>

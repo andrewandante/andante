@@ -3,14 +3,28 @@
 	"description": "The SilverStripe Framework Installer",
 	"require": {
 		"php": ">=5.3.3",
-		"silverstripe/cms": "3.5.1",
-		"silverstripe/framework": "3.5.1",
-		"silverstripe/reports": "3.5.1",
-		"silverstripe/siteconfig": "3.5.1",
-		"silverstripe/blog": "^2.4",
-		"silverstripe/comments": "^2.1",
-		"jonom/silverstripe-betternavigator": "^3.0"
+		"silverstripe/cms": "^4.0.0",
+		"silverstripe/framework": "^4.0.0",
+		"silverstripe/reports": "^4.0.0",
+		"silverstripe/siteconfig": "^4.0.0",
+		"silverstripe/blog": "dev-ss4",
+		"silverstripe/comments": "dev-feature/ss4-compat",
+		"jonom/silverstripe-betternavigator": "dev-UPGRADE/ss4-compatiblilty"
 	},
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "git@github.com:robbieaverill/silverstripe-blog.git"
+		},
+		{
+			"type": "vcs",
+			"url": "git@github.com:robbieaverill/silverstripe-comments.git"
+		},
+		{
+			"type": "vcs",
+			"url": "git@github.com:andrewandante/silverstripe-betternavigator.git"
+		}
+	],
 	"require-dev": {
 		"phpunit/PHPUnit": "~3.7@stable"
 	},

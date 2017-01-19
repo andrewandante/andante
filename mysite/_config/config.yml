@@ -7,21 +7,21 @@ After:
 # YAML configuration for SilverStripe
 # See http://doc.silverstripe.org/framework/en/topics/configuration
 # Caution: Indentation through two spaces, not tabs
-SSViewer:
+SilverStripe\View\SSViewer:
   theme: 'future-imperfect'
-Debug:
+SilverStripe\Dev\Debug:
   friendly_error_httpcode: true
-SiteConfig:
+SilverStripe\SiteConfig\SiteConfig:
   extensions:
     - SiteConfigExtension
-BlogPost:
+SilverStripe\Blog\Model\BlogPost:
   extensions:
     - BlogPostExtension
-SiteTree:
+SilverStripe\CMS\Model\SiteTree:
   extensions:
-    - CommentsExtension
+    - SilverStripe\Comments\Extensions\CommentsExtension
   comments:
     require_moderation_cms: true
-Comment:
+SilverStripe\Comments\Model\Comment:
   extensions:
     - CommentExtension

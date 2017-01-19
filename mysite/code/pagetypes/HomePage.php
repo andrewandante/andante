@@ -1,20 +1,23 @@
 <?php
 
+use SilverStripe\Blog\Model\BlogPost;
+
+
 class HomePage extends Page {
 
 }
 
-class HomePage_Controller extends Page_Controller {
+class HomePageController extends PageController {
 
 	/**
-	 * @return DataList of BlogPost objects
+	 * @return \SilverStripe\ORM\DataList of BlogPost objects
 	 */
 	public function getBlogPosts() {
-		return $posts = BlogPost::get();
+		return BlogPost::get();
 	}
 
 	/**
-	 * @return Blog
+	 * @return \SilverStripe\Blog\Model\Blog
 	 */
 	public function getFeaturePost() {
 		if ($this->getBlogPosts()->filter('Tags.Title', 'feature')->count() > 0) {
@@ -25,7 +28,7 @@ class HomePage_Controller extends Page_Controller {
 	}
 
 	/**
-	 * @return Blog
+	 * @return \SilverStripe\Blog\Model\Blog
 	 */
 	public function getMostRecentPost() {
 		return $this->getBlogPosts()->sort('PublishDate', 'DESC')->first();

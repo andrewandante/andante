@@ -1,5 +1,10 @@
 <?php
 
+use SilverStripe\Core\Extension;
+use SilverStripe\Forms\FieldList;
+use SilverStripe\Forms\TextField;
+use SilverStripe\Forms\UploadField;
+
 class SiteConfigExtension extends Extension {
 
 	private static $db = [
@@ -9,8 +14,8 @@ class SiteConfigExtension extends Extension {
 	];
 
 	private static $has_one = [
-		'SiteLogo' => 'Image',
-		'SiteBanner' => 'Image'
+		'SiteLogo' => 'SilverStripe\\Assets\\Image',
+		'SiteBanner' => 'SilverStripe\\Assets\\Image'
 	];
 
 	public function updateCMSFields(FieldList $fields) {

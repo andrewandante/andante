@@ -1,5 +1,20 @@
 <?php
 
+use SilverStripe\Control\Cookie;
+use SilverStripe\Core\Convert;
+use SilverStripe\Core\Extension;
+use SilverStripe\Forms\CompositeField;
+use SilverStripe\Forms\EmailField;
+use SilverStripe\Forms\FieldList;
+use SilverStripe\Forms\Form;
+use SilverStripe\Forms\FormAction;
+use SilverStripe\Forms\HiddenField;
+use SilverStripe\Forms\ReadonlyField;
+use SilverStripe\Forms\RequiredFields;
+use SilverStripe\Forms\TextareaField;
+use SilverStripe\Forms\TextField;
+use SilverStripe\Security\Member;
+
 class CommentExtension extends Extension {
 
 	/**
@@ -26,7 +41,7 @@ class CommentExtension extends Extension {
 
 				// Email
 				EmailField::create(
-					"Email",
+					"SilverStripe\\Control\\Email\\Email",
 					_t('CommentingController.EMAILADDRESS', "Your email address (will not be published)")
 				)
 					->setCustomValidationMessage($emailRequired)
@@ -35,7 +50,7 @@ class CommentExtension extends Extension {
 					->setAttribute('data-rule-email', true),
 
 				// Comment
-				TextareaField::create("Comment", _t('CommentingController.COMMENTS', "Comments"))
+				TextareaField::create("SilverStripe\\Comments\\Model\\Comment", _t('CommentingController.COMMENTS', "Comments"))
 					->setCustomValidationMessage($commentRequired)
 					->setAttribute('data-msg-required', $commentRequired)
 			),
@@ -51,7 +66,7 @@ class CommentExtension extends Extension {
 			$fields->insertAfter(
 				ReadonlyField::create('PreviewComment', _t('CommentInterface.PREVIEWLABEL', 'Preview'))
 					->setAttribute('style', 'display: none'), // enable through JS
-				'Comment'
+				'SilverStripe\\Comments\\Model\\Comment'
 			);
 		}
 
@@ -84,10 +99,10 @@ class CommentExtension extends Extension {
 				$fields = $form->Fields();
 
 				$fields->removeByName('Name');
-				$fields->removeByName('Email');
-				$fields->insertBefore(new ReadonlyField("NameView", _t('CommentInterface.YOURNAME', 'Your name'), $member->getName()), 'Comment');
+				$fields->removeByName('SilverStripe\\Control\\Email\\Email');
+				$fields->insertBefore(new ReadonlyField("NameView", _t('CommentInterface.YOURNAME', 'Your name'), $member->getName()), 'SilverStripe\\Comments\\Model\\Comment');
 				$fields->push(new HiddenField("Name", "", $member->getName()));
-				$fields->push(new HiddenField("Email", "", $member->Email));
+				$fields->push(new HiddenField("SilverStripe\\Control\\Email\\Email", "", $member->Email));
 			}
 
 			// we do not want to read a new URL when the form has already been submitted
@@ -108,7 +123,7 @@ class CommentExtension extends Extension {
 
 			$form->loadDataFrom(array(
 				"Name"        => isset($data['Name']) ? $data['Name'] : '',
-				"Email"        => isset($data['Email']) ? $data['Email'] : ''
+				"Email"        => isset($data['SilverStripe\\Control\\Email\\Email']) ? $data['SilverStripe\\Control\\Email\\Email'] : ''
 			));
 			// allow previous value to fill if comment not stored in cookie (i.e. validation error)
 			$prevComment = Cookie::get('CommentsForm_Comment');
