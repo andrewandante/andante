@@ -9,11 +9,16 @@
 		<div class="meta">
 			<time class="published" datetime="$PublishDate">$PublishDate.Nice</time>
 			<% loop $Authors %>
-				<a href="#" class="author"><span class="name">$Name</span><img src="$ThemeDir/images/avatar.jpg" alt="$Name" /></a>
+				<a href="#" class="author"><span class="name">$Name</span>
+					<% if $BlogProfileImage %>
+						$BlogProfileImage.ScaleWidth(50)
+					<% else %>
+						<img src="https://api.adorable.io/avatars/70/random@andante.png" />
+					<% end_if %></a>
 			<% end_loop %>
 		</div>
 	</header>
-	<a href="$Link" alt="Continue Reading..." title="$Title">
+	<a class="featured-post-image" href="$Link" alt="Continue Reading..." title="$Title">
 		$FeaturedImage.ScaleWidth(1000)
 	</a>
 	<p>$Content.FirstSentence</p>

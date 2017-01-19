@@ -1953,8 +1953,7 @@ dl {
       padding: 3.75em 3em 1.75em 3em ;
       border-left: solid 1px rgba(160, 160, 160, 0.3);
       min-width: 17em;
-      text-align: right;
-      width: 17em; }
+      text-align: right; }
       .post > header .meta > * {
         margin: 0 0 1em 0; }
       .post > header .meta > :last-child {
@@ -2182,6 +2181,8 @@ table {
 /* Header */
 body {
   padding-top: 3.5em; }
+  body .featured-post-image {
+    border-bottom: none; }
 
 #header {
   display: -moz-flex;
@@ -2217,7 +2218,8 @@ body {
     padding: 0 0 0 1.5em;
     white-space: nowrap; }
     #header h1 a {
-      font-size: 0.7em; }
+      font-size: 2em;
+      padding-top: 0.4em; }
   #header .links {
     -moz-flex: 1;
     -webkit-flex: 1;
@@ -2285,14 +2287,17 @@ body {
             text-indent: 0;
             top: 0;
             width: inherit; }
+        #header .main ul li .action {
+          float: right;
+          height: 5.8em; }
   #header form {
     margin: 0; }
     #header form input {
-      display: inline-block;
-      height: 2.5em;
+      display: flex;
       position: relative;
-      top: -2px;
-      vertical-align: middle; }
+      vertical-align: middle;
+      float: left;
+      height: 3.5em; }
   #header #search {
     -moz-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
@@ -2522,6 +2527,8 @@ body {
   list-style-type: none; }
   .comment.last {
     border-bottom: dimgray 1px solid; }
+  .comment .author {
+    font-size: 0.8em; }
 
 .comment-text p {
   font-weight: bold; }

@@ -1,5 +1,4 @@
 ## At a Walking Speed
-=====================
 
 A slower blog than most, built on SilverStripe 4.
 

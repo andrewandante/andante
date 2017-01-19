@@ -8,3 +8,4 @@ $database = '';
 
 require_once('conf/ConfigureFromEnv.php');
 
+\SilverStripe\ORM\Search\FulltextSearchable::enable();

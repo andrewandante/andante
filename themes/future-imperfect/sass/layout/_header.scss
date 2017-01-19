@@ -8,6 +8,10 @@
 
 	body {
 		padding-top: 3.5em;
+
+		.featured-post-image {
+			border-bottom: none;
+		}
 	}
 
 	#header {
@@ -46,7 +50,8 @@
 			white-space: nowrap;
 
 			a {
-				font-size: 0.7em;
+				font-size: 2em;
+				padding-top: 0.4em;
 			}
 		}
 
@@ -125,6 +130,11 @@
 							width: inherit;
 						}
 					}
+
+					.action	{
+						float: right;
+						height: 5.8em;
+					}
 				}
 			}
 		}
@@ -133,11 +143,12 @@
 			margin: 0;
 
 			input {
-				display: inline-block;
-				height: 2.5em;
+				display: flex;
 				position: relative;
-				top: -2px;
 				vertical-align: middle;
+				float: left;
+				height: 3.5em;
+
 			}
 		}
 
