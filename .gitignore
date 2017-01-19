@@ -21,6 +21,8 @@ _ss_environment.php
 /siteconfig/
 /tagfield/
 /betternavigator/
+/asset-admin/
+/graphql/
 
 # ignore assets
 /assets/

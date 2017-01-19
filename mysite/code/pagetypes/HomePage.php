@@ -10,13 +10,6 @@ class HomePage extends Page {
 class HomePageController extends PageController {
 
 	/**
-	 * @return \SilverStripe\ORM\DataList of BlogPost objects
-	 */
-	public function getBlogPosts() {
-		return BlogPost::get();
-	}
-
-	/**
 	 * @return \SilverStripe\Blog\Model\Blog
 	 */
 	public function getFeaturePost() {

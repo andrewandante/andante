@@ -1,0 +1,50 @@
+///
+/// Future Imperfect by HTML5 UP
+/// html5up.net | @n33co
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Comment */
+
+.comment {
+	border-top: dimgray 1px solid;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	list-style-type: none;
+
+	&.last {
+		border-bottom: dimgray 1px solid;
+	}
+}
+
+.comment-text {
+	p {
+		font-weight: bold;
+	}
+}
+
+.comment-moderation-options {
+	a {
+		padding: 1px;
+		border-bottom: none;
+		min-width: 60px;
+	}
+	.spam {
+		color: orange;
+		text-transform: capitalize;
+		&:hover {
+			color: lighten(orange, 10%) !important;
+			border-bottom: solid lighten(orange, 10%) 1px;
+		}
+	}
+
+	.delete {
+		color: darkred;
+		text-transform: capitalize;
+		&:hover {
+			color: lighten(darkred, 10%) !important;
+			border-bottom: solid lighten(darkred, 10%) 1px;
+
+		}
+	}
+}

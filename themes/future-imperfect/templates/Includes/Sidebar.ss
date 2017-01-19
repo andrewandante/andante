@@ -17,8 +17,8 @@
 			<li>
 				<article>
 					<header>
-						<h3><a href="#">$Title</a></h3>
-						<time class="published" datetime="$Published">$Published.Nice</time>
+						<h3><a href="$Link">$Title</a></h3>
+						<time class="published" datetime="$PublishDate">$PublishDate.Nice</time>
 					</header>
 					<a href="#" class="image"><img src="$FeaturedImage.Link" alt="" /></a>
 				</article>

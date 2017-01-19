@@ -9,7 +9,9 @@
 		"silverstripe/siteconfig": "^4.0.0",
 		"silverstripe/blog": "dev-ss4",
 		"silverstripe/comments": "dev-feature/ss4-compat",
-		"jonom/silverstripe-betternavigator": "dev-UPGRADE/ss4-compatiblilty"
+		"colymba/gridfield-bulk-editing-tools": "dev-feature/ss4-compat as 2.1.x-dev",
+		"jonom/silverstripe-betternavigator": "dev-UPGRADE/ss4-compatiblilty",
+		"silverstripe/asset-admin": "^1.0@alpha"
 	},
 	"repositories": [
 		{
@@ -19,6 +21,10 @@
 		{
 			"type": "vcs",
 			"url": "git@github.com:robbieaverill/silverstripe-comments.git"
+		},
+		{
+			"type": "vcs",
+			"url": "git@github.com:robbieaverill/GridFieldBulkEditingTools.git"
 		},
 		{
 			"type": "vcs",
