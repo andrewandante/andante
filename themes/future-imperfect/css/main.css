@@ -2153,12 +2153,18 @@ table {
       background-color: rgba(160, 160, 160, 0.075); }
   table td {
     padding: 0.75em 0.75em; }
+    table td.track-blurb {
+      text-align: right;
+      vertical-align: top; }
   table th {
     color: #3c3b3b;
     font-size: 0.9em;
     font-weight: 700;
     padding: 0 0.75em 0.75em 0.75em;
     text-align: left; }
+    table th.listening-to {
+      font-size: 1.1em;
+      padding-top: 12px; }
   table thead {
     border-bottom: solid 2px rgba(160, 160, 160, 0.3); }
   table tfoot {

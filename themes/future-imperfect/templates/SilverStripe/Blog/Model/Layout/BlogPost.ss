@@ -10,10 +10,24 @@
 
 		<div class="content">$Content</div>
 
+		<% if $TrackEmbedLink %>
+			<div class="feature-track">
+				<table>
+					<tr>
+						<th colspan="2" class="listening-to">I'm listening to...</th>
+					</tr>
+					<tr>
+						<td>$TrackEmbedLink</td>
+						<td class="track-blurb">$TrackBlurb</td>
+					</tr>
+				</table>
+			</div>
+		<% end_if %>
+
 		<% include EntryMeta %>
 
-	$Form
-	$CommentsForm
+		$Form
+		$CommentsForm
 	</article>
 </div>
 
