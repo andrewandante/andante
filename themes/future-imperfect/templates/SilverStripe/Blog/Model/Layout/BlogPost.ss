@@ -26,7 +26,6 @@
 
 		<% include EntryMeta %>
 
-		$Form
 		$CommentsForm
 	</article>
 </div>

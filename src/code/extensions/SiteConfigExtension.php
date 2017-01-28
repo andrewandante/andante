@@ -3,7 +3,7 @@
 use SilverStripe\Core\Extension;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\TextField;
-use SilverStripe\Forms\UploadField;
+use SilverStripe\AssetAdmin\Forms\UploadField;
 
 class SiteConfigExtension extends Extension {
 

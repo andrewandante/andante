@@ -22,6 +22,9 @@
 	<!-- Main -->
 	<div id="main">
 		$Layout
+		<% if $ErrorCode %>
+			$Content
+		<% end_if %>
 		$Form
 	</div>
 

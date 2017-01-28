@@ -22,6 +22,9 @@ SilverStripe\CMS\Model\SiteTree:
     - SilverStripe\Comments\Extensions\CommentsExtension
   comments:
     require_moderation_cms: true
-SilverStripe\Comments\Model\Comment:
+    use_gravatar: true
+    gravatar_default: 'identicon'
+    gravatar_rating: 'pg'
+SilverStripe\Comments\Controllers\CommentingController:
   extensions:
     - CommentExtension

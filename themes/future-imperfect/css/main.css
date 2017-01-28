@@ -2535,6 +2535,10 @@ body {
     border-bottom: dimgray 1px solid; }
   .comment .author {
     font-size: 0.8em; }
+  .comment .date {
+    float: right; }
+  .comment .gravatar {
+    float: right; }
 
 .comment-text p {
   font-weight: bold; }
