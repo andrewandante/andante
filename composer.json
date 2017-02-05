@@ -3,13 +3,13 @@
 	"description": "The SilverStripe Framework Installer",
 	"require": {
 		"php": ">=5.3.3",
-		"silverstripe/cms": "^4.0.0",
-		"silverstripe/framework": "^4.0.0",
+		"silverstripe/cms": "4.0.0-alpha4",
+		"silverstripe/framework": "4.0.0-alpha4",
 		"silverstripe/reports": "^4.0.0",
-		"silverstripe/siteconfig": "^4.0.0",
+		"silverstripe/siteconfig": "4.0.0-alpha4",
 		"silverstripe/blog": "dev-ss4",
-		"silverstripe/comments": "dev-feature/ss4-compat",
-		"colymba/gridfield-bulk-editing-tools": "dev-feature/ss4-compat as 2.1.x-dev",
+		"silverstripe/comments": "master",
+		"colymba/gridfield-bulk-editing-tools": "^3.0",
 		"jonom/silverstripe-betternavigator": "dev-UPGRADE/ss4-compatiblilty",
 		"silverstripe/asset-admin": "^1.0@alpha"
 	},
@@ -17,14 +17,6 @@
 		{
 			"type": "vcs",
 			"url": "git@github.com:robbieaverill/silverstripe-blog.git"
-		},
-		{
-			"type": "vcs",
-			"url": "git@github.com:robbieaverill/silverstripe-comments.git"
-		},
-		{
-			"type": "vcs",
-			"url": "git@github.com:robbieaverill/GridFieldBulkEditingTools.git"
 		},
 		{
 			"type": "vcs",
@@ -42,6 +34,6 @@
 	"config": {
 		"process-timeout": 600
 	},
-	"prefer-stable": true,
+	"prefer-stable": false,
 	"minimum-stability": "dev"
 }
