@@ -15,7 +15,9 @@
 <!-- Wrapper -->
 <div id="wrapper">
 
+	<% if $Member.CurrentUser %>
 	$BetterNavigator
+	<% end_if %>
 	<% include Header %>
 	<% include Menu %>
 
