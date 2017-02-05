@@ -2,6 +2,7 @@
 /silverstripe-cache/
 
 # ignore all environment files
+.env
 _ss_environment.php
 
 # ignore build tools
@@ -29,3 +30,6 @@ _ss_environment.php
 
 # ignore phpstorm stuff
 /.idea/
+
+# ignore secret things
+andante.pem
