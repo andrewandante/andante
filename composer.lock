@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "861fa35eef99f56ae86d13cb6a10b542",
-    "content-hash": "34e4243d166d3ee84ae97439cbd1a571",
+    "hash": "f007cf884f07131ea6b2338587c98101",
+    "content-hash": "f007a1608c1b8352305fc838168964fd",
     "packages": [
         {
             "name": "colymba/gridfield-bulk-editing-tools",
@@ -478,22 +478,22 @@
         },
         {
             "name": "silverstripe/asset-admin",
-            "version": "1.0.0-alpha4",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-asset-admin.git",
-                "reference": "121b6b20de7cd8b21960ef82649d9cf2f9fac98f"
+                "reference": "4772efe3dfa5c6ef53b8472b47f7d18520aead57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-asset-admin/zipball/121b6b20de7cd8b21960ef82649d9cf2f9fac98f",
-                "reference": "121b6b20de7cd8b21960ef82649d9cf2f9fac98f",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-asset-admin/zipball/4772efe3dfa5c6ef53b8472b47f7d18520aead57",
+                "reference": "4772efe3dfa5c6ef53b8472b47f7d18520aead57",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.5.0",
-                "silverstripe/cms": "^4",
-                "silverstripe/framework": "^4",
+                "silverstripe/cms": "^4@dev",
+                "silverstripe/framework": "^4@dev",
                 "silverstripe/graphql": "^0.2@dev"
             },
             "require-dev": {
@@ -521,7 +521,7 @@
                 "BSD-3-Clause"
             ],
             "description": "Asset management for the SilverStripe CMS",
-            "time": "2017-01-17 03:11:43"
+            "time": "2017-02-01 20:11:07"
         },
         {
             "name": "silverstripe/blog",
@@ -585,16 +585,16 @@
         },
         {
             "name": "silverstripe/cms",
-            "version": "4.0.0-alpha4",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-cms.git",
-                "reference": "cfe23dd5aaf72b0a98a0d71aa6de6112e4472ee8"
+                "reference": "f032fe2301c53f666226d1edbeb5fa2030fdbf3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/cfe23dd5aaf72b0a98a0d71aa6de6112e4472ee8",
-                "reference": "cfe23dd5aaf72b0a98a0d71aa6de6112e4472ee8",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/f032fe2301c53f666226d1edbeb5fa2030fdbf3e",
+                "reference": "f032fe2301c53f666226d1edbeb5fa2030fdbf3e",
                 "shasum": ""
             },
             "require": {
@@ -645,7 +645,7 @@
                 "cms",
                 "silverstripe"
             ],
-            "time": "2017-01-17 03:11:43"
+            "time": "2017-02-01 01:01:47"
         },
         {
             "name": "silverstripe/comments",
@@ -703,16 +703,16 @@
         },
         {
             "name": "silverstripe/framework",
-            "version": "4.0.0-alpha4",
+            "version": "dev-FIX/hydrate-lazy-fields-on-dbobject",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "6bd7a6f00b3a6de8b80bcf8e70ff2bd88b9347a3"
+                "url": "https://github.com/andrewandante/silverstripe-framework.git",
+                "reference": "e862f769e16faa8d36c93bd53c1ca64233251f6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/6bd7a6f00b3a6de8b80bcf8e70ff2bd88b9347a3",
-                "reference": "6bd7a6f00b3a6de8b80bcf8e70ff2bd88b9347a3",
+                "url": "https://api.github.com/repos/andrewandante/silverstripe-framework/zipball/e862f769e16faa8d36c93bd53c1ca64233251f6f",
+                "reference": "e862f769e16faa8d36c93bd53c1ca64233251f6f",
                 "shasum": ""
             },
             "require": {
@@ -722,7 +722,10 @@
                 "monolog/monolog": "~1.11",
                 "php": ">=5.5.0",
                 "swiftmailer/swiftmailer": "~5.4",
-                "symfony/yaml": "~2.7"
+                "symfony/config": "^2.8",
+                "symfony/translation": "^2.8",
+                "symfony/yaml": "~2.7",
+                "vlucas/phpdotenv": "^2.4"
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.8",
@@ -768,11 +771,15 @@
                     "tests/behat/features/bootstrap"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "include-path": [
                 "src/",
                 "thirdparty/"
             ],
+            "scripts": {
+                "lint": [
+                    "phpcs --standard=tests/phpcs/ruleset.xml src/ admin/code/ tests/ admin/tests/"
+                ]
+            },
             "license": [
                 "BSD-3-Clause"
             ],
@@ -792,7 +799,10 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2017-01-17 04:07:42"
+            "support": {
+                "source": "https://github.com/andrewandante/silverstripe-framework/tree/FIX/hydrate-lazy-fields-on-dbobject"
+            },
+            "time": "2017-02-07 15:20:17"
         },
         {
             "name": "silverstripe/graphql",
@@ -876,16 +886,16 @@
         },
         {
             "name": "silverstripe/reports",
-            "version": "4.0.0-alpha4",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-reports.git",
-                "reference": "3cadebf5954cf0233c13d9845ed6d31d07346429"
+                "reference": "37a7e68f2d797d786806a08264fcc9487b2088e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-reports/zipball/3cadebf5954cf0233c13d9845ed6d31d07346429",
-                "reference": "3cadebf5954cf0233c13d9845ed6d31d07346429",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-reports/zipball/37a7e68f2d797d786806a08264fcc9487b2088e8",
+                "reference": "37a7e68f2d797d786806a08264fcc9487b2088e8",
                 "shasum": ""
             },
             "require": {
@@ -926,20 +936,20 @@
                 "reports",
                 "silverstripe"
             ],
-            "time": "2017-01-11 01:27:02"
+            "time": "2017-01-24 12:19:07"
         },
         {
             "name": "silverstripe/siteconfig",
-            "version": "4.0.0-alpha4",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-siteconfig.git",
-                "reference": "e673d65c54923dd8014d874f3ebaef90f2935cbc"
+                "reference": "d34a3ee2d3e9e6e0b854621f8c16ef393b2ad1ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-siteconfig/zipball/e673d65c54923dd8014d874f3ebaef90f2935cbc",
-                "reference": "e673d65c54923dd8014d874f3ebaef90f2935cbc",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-siteconfig/zipball/d34a3ee2d3e9e6e0b854621f8c16ef393b2ad1ee",
+                "reference": "d34a3ee2d3e9e6e0b854621f8c16ef393b2ad1ee",
                 "shasum": ""
             },
             "require": {
@@ -978,7 +988,7 @@
                 "silverstripe",
                 "siteconfig"
             ],
-            "time": "2017-01-17 03:11:43"
+            "time": "2017-01-26 13:12:41"
         },
         {
             "name": "silverstripe/tagfield",
@@ -1082,6 +1092,234 @@
             "time": "2016-12-29 10:02:40"
         },
         {
+            "name": "symfony/config",
+            "version": "v2.8.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/config.git",
+                "reference": "747fa191136cf798409183c501435aa4c16184df"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/config/zipball/747fa191136cf798409183c501435aa4c16184df",
+                "reference": "747fa191136cf798409183c501435aa4c16184df",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9",
+                "symfony/filesystem": "~2.3|~3.0.0"
+            },
+            "require-dev": {
+                "symfony/yaml": "~2.7|~3.0.0"
+            },
+            "suggest": {
+                "symfony/yaml": "To use the yaml reference dumper"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Config\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Config Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-02-05 10:11:19"
+        },
+        {
+            "name": "symfony/filesystem",
+            "version": "v3.0.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/filesystem.git",
+                "reference": "b2da5009d9bacbd91d83486aa1f44c793a8c380d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/b2da5009d9bacbd91d83486aa1f44c793a8c380d",
+                "reference": "b2da5009d9bacbd91d83486aa1f44c793a8c380d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Filesystem\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Filesystem Component",
+            "homepage": "https://symfony.com",
+            "time": "2016-07-20 05:43:46"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "e79d363049d1c2128f133a2667e4f4190904f7f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/e79d363049d1c2128f133a2667e4f4190904f7f4",
+                "reference": "e79d363049d1c2128f133a2667e4f4190904f7f4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2016-11-14 01:06:16"
+        },
+        {
+            "name": "symfony/translation",
+            "version": "v2.8.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/translation.git",
+                "reference": "c281ac2b484210bb95106bdb8ae8356e63277725"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/c281ac2b484210bb95106bdb8ae8356e63277725",
+                "reference": "c281ac2b484210bb95106bdb8ae8356e63277725",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9",
+                "symfony/polyfill-mbstring": "~1.0"
+            },
+            "conflict": {
+                "symfony/config": "<2.7"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/config": "~2.8",
+                "symfony/intl": "~2.4|~3.0.0",
+                "symfony/yaml": "~2.2|~3.0.0"
+            },
+            "suggest": {
+                "psr/log": "To use logging capability in translator",
+                "symfony/config": "",
+                "symfony/yaml": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Translation\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Translation Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-01-21 16:59:38"
+        },
+        {
             "name": "symfony/yaml",
             "version": "v2.8.17",
             "source": {
@@ -1129,6 +1367,56 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2017-01-21 16:40:50"
+        },
+        {
+            "name": "vlucas/phpdotenv",
+            "version": "v2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vlucas/phpdotenv.git",
+                "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
+                "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8 || ^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dotenv\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause-Attribution"
+            ],
+            "authors": [
+                {
+                    "name": "Vance Lucas",
+                    "email": "vance@vancelucas.com",
+                    "homepage": "http://www.vancelucas.com"
+                }
+            ],
+            "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
+            "keywords": [
+                "dotenv",
+                "env",
+                "environment"
+            ],
+            "time": "2016-09-01 10:05:43"
         },
         {
             "name": "webonyx/graphql-php",
@@ -1536,11 +1824,23 @@
             "time": "2013-01-13 10:24:48"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "4.0.x-dev",
+            "alias_normalized": "4.0.9999999.9999999-dev",
+            "version": "dev-FIX/hydrate-lazy-fields-on-dbobject",
+            "package": "silverstripe/framework"
+        }
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
+        "silverstripe/cms": 20,
+        "silverstripe/framework": 20,
+        "silverstripe/reports": 20,
+        "silverstripe/siteconfig": 20,
         "silverstripe/blog": 20,
         "jonom/silverstripe-betternavigator": 20,
+        "silverstripe/asset-admin": 20,
         "phpunit/phpunit": 0
     },
     "prefer-stable": true,
