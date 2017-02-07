@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "46a75ee925d7078f8edcfe9350130f28",
-    "content-hash": "9334ddf825afc084f47bf463e6ca2b12",
+    "hash": "861fa35eef99f56ae86d13cb6a10b542",
+    "content-hash": "34e4243d166d3ee84ae97439cbd1a571",
     "packages": [
         {
             "name": "colymba/gridfield-bulk-editing-tools",
@@ -525,16 +525,16 @@
         },
         {
             "name": "silverstripe/blog",
-            "version": "dev-ss4",
+            "version": "dev-FIX/view-permissions-on-posts",
             "source": {
                 "type": "git",
-                "url": "https://github.com/robbieaverill/silverstripe-blog.git",
-                "reference": "bb08242edbe332e2e67d08ce5bbe1a7bc69fd50e"
+                "url": "https://github.com/andrewandante/silverstripe-blog.git",
+                "reference": "b054cc2759b84fdadb3d917a4eb8fa1046983266"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/robbieaverill/silverstripe-blog/zipball/bb08242edbe332e2e67d08ce5bbe1a7bc69fd50e",
-                "reference": "bb08242edbe332e2e67d08ce5bbe1a7bc69fd50e",
+                "url": "https://api.github.com/repos/andrewandante/silverstripe-blog/zipball/b054cc2759b84fdadb3d917a4eb8fa1046983266",
+                "reference": "b054cc2759b84fdadb3d917a4eb8fa1046983266",
                 "shasum": ""
             },
             "require": {
@@ -579,9 +579,9 @@
                 "silverstripe"
             ],
             "support": {
-                "source": "https://github.com/robbieaverill/silverstripe-blog/tree/master"
+                "source": "https://github.com/andrewandante/silverstripe-blog/tree/FIX/view-permissions-on-posts"
             },
-            "time": "2017-01-19 04:09:17"
+            "time": "2017-02-07 09:53:23"
         },
         {
             "name": "silverstripe/cms",
@@ -1083,16 +1083,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.8.16",
+            "version": "v2.8.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "dbe61fed9cd4a44c5b1d14e5e7b1a8640cfb2bf2"
+                "reference": "322a8c2dfbca15ad6b1b27e182899f98ec0e0153"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/dbe61fed9cd4a44c5b1d14e5e7b1a8640cfb2bf2",
-                "reference": "dbe61fed9cd4a44c5b1d14e5e7b1a8640cfb2bf2",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/322a8c2dfbca15ad6b1b27e182899f98ec0e0153",
+                "reference": "322a8c2dfbca15ad6b1b27e182899f98ec0e0153",
                 "shasum": ""
             },
             "require": {
@@ -1128,7 +1128,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2017-01-03 13:49:52"
+            "time": "2017-01-21 16:40:50"
         },
         {
             "name": "webonyx/graphql-php",
