@@ -9,7 +9,7 @@
 		<div class="meta">
 			<time class="published" datetime="$PublishDate">$PublishDate.Nice</time>
 			<% loop $Authors %>
-				<a href="#" class="author"><span class="name">$Name</span>
+				<a href="blog/profile/$URLSegment" class="author"><span class="name">$Name</span>
 					<% if $BlogProfileImage %>
 						$BlogProfileImage.ScaleWidth(50)
 					<% else %>

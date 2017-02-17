@@ -2124,6 +2124,9 @@ dl {
           margin: 0 0 0 1.25em;
           padding: 0 0 0 1.25em; } }
 
+.blog-entry .post-image img {
+  width: 100%; }
+
 /* Section/Article */
 section.special, article.special {
   text-align: center; }

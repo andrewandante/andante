@@ -4,10 +4,10 @@
 	"require": {
 		"php": ">=5.3.3",
 		"silverstripe/cms": "4.0.x-dev",
-		"silverstripe/framework": "dev-FIX/hydrate-lazy-fields-on-dbobject as 4.0.x-dev",
+		"silverstripe/framework": "4.0.x-dev",
 		"silverstripe/reports": "4.0.x-dev",
 		"silverstripe/siteconfig": "4.0.x-dev",
-		"silverstripe/blog": "dev-FIX/view-permissions-on-posts",
+		"silverstripe/blog": "dev-FIX/datepicker",
 		"silverstripe/comments": "master",
 		"colymba/gridfield-bulk-editing-tools": "^3.0",
 		"jonom/silverstripe-betternavigator": "dev-UPGRADE/ss4-compatiblilty",
@@ -16,15 +16,11 @@
 	"repositories": [
 		{
 			"type": "vcs",
-			"url": "git@github.com:andrewandante/silverstripe-blog.git"
-		},
-		{
-			"type": "vcs",
 			"url": "git@github.com:andrewandante/silverstripe-betternavigator.git"
 		},
 		{
 			"type": "vcs",
-			"url": "git@github.com:andrewandante/silverstripe-framework.git"
+			"url": "git@github.com:andrewandante/silverstripe-blog.git"
 		}
 	],
 	"require-dev": {

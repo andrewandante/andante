@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f007cf884f07131ea6b2338587c98101",
-    "content-hash": "f007a1608c1b8352305fc838168964fd",
+    "hash": "d95ad22449a9eeeec0a64820353984d1",
+    "content-hash": "e0c56f162e4da4b6490c44cd2e692d7d",
     "packages": [
         {
             "name": "colymba/gridfield-bulk-editing-tools",
@@ -270,16 +270,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.34",
+            "version": "1.0.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "469ad53c13ea19a0e54e3e5d70f61227ddcc0299"
+                "reference": "dda7f3ab94158a002d9846a97dc18ebfb7acc062"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/469ad53c13ea19a0e54e3e5d70f61227ddcc0299",
-                "reference": "469ad53c13ea19a0e54e3e5d70f61227ddcc0299",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/dda7f3ab94158a002d9846a97dc18ebfb7acc062",
+                "reference": "dda7f3ab94158a002d9846a97dc18ebfb7acc062",
                 "shasum": ""
             },
             "require": {
@@ -349,7 +349,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2017-01-30 17:41:17"
+            "time": "2017-02-09 11:33:58"
         },
         {
             "name": "monolog/monolog",
@@ -482,12 +482,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-asset-admin.git",
-                "reference": "4772efe3dfa5c6ef53b8472b47f7d18520aead57"
+                "reference": "a0bc3721accc874e7639bfc3df638114e5cbaf8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-asset-admin/zipball/4772efe3dfa5c6ef53b8472b47f7d18520aead57",
-                "reference": "4772efe3dfa5c6ef53b8472b47f7d18520aead57",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-asset-admin/zipball/a0bc3721accc874e7639bfc3df638114e5cbaf8b",
+                "reference": "a0bc3721accc874e7639bfc3df638114e5cbaf8b",
                 "shasum": ""
             },
             "require": {
@@ -521,20 +521,20 @@
                 "BSD-3-Clause"
             ],
             "description": "Asset management for the SilverStripe CMS",
-            "time": "2017-02-01 20:11:07"
+            "time": "2017-02-08 03:59:24"
         },
         {
             "name": "silverstripe/blog",
-            "version": "dev-FIX/view-permissions-on-posts",
+            "version": "dev-FIX/datepicker",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andrewandante/silverstripe-blog.git",
-                "reference": "b054cc2759b84fdadb3d917a4eb8fa1046983266"
+                "reference": "141db8d472e1fd1257f9e0cca646057f5bd56d7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andrewandante/silverstripe-blog/zipball/b054cc2759b84fdadb3d917a4eb8fa1046983266",
-                "reference": "b054cc2759b84fdadb3d917a4eb8fa1046983266",
+                "url": "https://api.github.com/repos/andrewandante/silverstripe-blog/zipball/141db8d472e1fd1257f9e0cca646057f5bd56d7e",
+                "reference": "141db8d472e1fd1257f9e0cca646057f5bd56d7e",
                 "shasum": ""
             },
             "require": {
@@ -560,7 +560,8 @@
             },
             "autoload": {
                 "psr-4": {
-                    "SilverStripe\\Blog\\": "src/"
+                    "SilverStripe\\Blog\\": "src/",
+                    "SilverStripe\\Blog\\Tests\\": "tests/"
                 }
             },
             "license": [
@@ -579,9 +580,9 @@
                 "silverstripe"
             ],
             "support": {
-                "source": "https://github.com/andrewandante/silverstripe-blog/tree/FIX/view-permissions-on-posts"
+                "source": "https://github.com/andrewandante/silverstripe-blog/tree/FIX/datepicker"
             },
-            "time": "2017-02-07 09:53:23"
+            "time": "2017-02-17 11:22:39"
         },
         {
             "name": "silverstripe/cms",
@@ -589,12 +590,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-cms.git",
-                "reference": "f032fe2301c53f666226d1edbeb5fa2030fdbf3e"
+                "reference": "dd5c05010880c8d7974785a6b8a0a296125bafce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/f032fe2301c53f666226d1edbeb5fa2030fdbf3e",
-                "reference": "f032fe2301c53f666226d1edbeb5fa2030fdbf3e",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/dd5c05010880c8d7974785a6b8a0a296125bafce",
+                "reference": "dd5c05010880c8d7974785a6b8a0a296125bafce",
                 "shasum": ""
             },
             "require": {
@@ -645,7 +646,7 @@
                 "cms",
                 "silverstripe"
             ],
-            "time": "2017-02-01 01:01:47"
+            "time": "2017-02-15 22:35:17"
         },
         {
             "name": "silverstripe/comments",
@@ -703,16 +704,16 @@
         },
         {
             "name": "silverstripe/framework",
-            "version": "dev-FIX/hydrate-lazy-fields-on-dbobject",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/andrewandante/silverstripe-framework.git",
-                "reference": "e862f769e16faa8d36c93bd53c1ca64233251f6f"
+                "url": "https://github.com/silverstripe/silverstripe-framework.git",
+                "reference": "12da6ee5942cb15736f2a60e2b8c57167a9473bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andrewandante/silverstripe-framework/zipball/e862f769e16faa8d36c93bd53c1ca64233251f6f",
-                "reference": "e862f769e16faa8d36c93bd53c1ca64233251f6f",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/12da6ee5942cb15736f2a60e2b8c57167a9473bf",
+                "reference": "12da6ee5942cb15736f2a60e2b8c57167a9473bf",
                 "shasum": ""
             },
             "require": {
@@ -771,15 +772,11 @@
                     "tests/behat/features/bootstrap"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "include-path": [
                 "src/",
                 "thirdparty/"
             ],
-            "scripts": {
-                "lint": [
-                    "phpcs --standard=tests/phpcs/ruleset.xml src/ admin/code/ tests/ admin/tests/"
-                ]
-            },
             "license": [
                 "BSD-3-Clause"
             ],
@@ -799,10 +796,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "support": {
-                "source": "https://github.com/andrewandante/silverstripe-framework/tree/FIX/hydrate-lazy-fields-on-dbobject"
-            },
-            "time": "2017-02-07 15:20:17"
+            "time": "2017-02-17 08:39:47"
         },
         {
             "name": "silverstripe/graphql",
@@ -890,12 +884,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-reports.git",
-                "reference": "37a7e68f2d797d786806a08264fcc9487b2088e8"
+                "reference": "015b400fb7d61e0fb4440f861f3924155345a03c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-reports/zipball/37a7e68f2d797d786806a08264fcc9487b2088e8",
-                "reference": "37a7e68f2d797d786806a08264fcc9487b2088e8",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-reports/zipball/015b400fb7d61e0fb4440f861f3924155345a03c",
+                "reference": "015b400fb7d61e0fb4440f861f3924155345a03c",
                 "shasum": ""
             },
             "require": {
@@ -936,7 +930,7 @@
                 "reports",
                 "silverstripe"
             ],
-            "time": "2017-01-24 12:19:07"
+            "time": "2017-02-15 21:56:51"
         },
         {
             "name": "silverstripe/siteconfig",
@@ -1039,16 +1033,16 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v5.4.5",
+            "version": "v5.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "cd142238a339459b10da3d8234220963f392540c"
+                "reference": "81fdccfaf8bdc5d5d7a1ef6bb3a61bbb1a6c4a3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/cd142238a339459b10da3d8234220963f392540c",
-                "reference": "cd142238a339459b10da3d8234220963f392540c",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/81fdccfaf8bdc5d5d7a1ef6bb3a61bbb1a6c4a3e",
+                "reference": "81fdccfaf8bdc5d5d7a1ef6bb3a61bbb1a6c4a3e",
                 "shasum": ""
             },
             "require": {
@@ -1089,7 +1083,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2016-12-29 10:02:40"
+            "time": "2017-02-13 07:52:53"
         },
         {
             "name": "symfony/config",
@@ -1824,14 +1818,7 @@
             "time": "2013-01-13 10:24:48"
         }
     ],
-    "aliases": [
-        {
-            "alias": "4.0.x-dev",
-            "alias_normalized": "4.0.9999999.9999999-dev",
-            "version": "dev-FIX/hydrate-lazy-fields-on-dbobject",
-            "package": "silverstripe/framework"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "silverstripe/cms": 20,

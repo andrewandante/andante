@@ -20,7 +20,7 @@
 						<h3><a href="$Link">$Title</a></h3>
 						<time class="published" datetime="$PublishDate">$PublishDate.Nice</time>
 					</header>
-					<a href="#" class="image"><img src="$FeaturedImage.Link" alt="" /></a>
+					<a href="$Link" class="image"><img src="$FeaturedImage.Link" alt="" /></a>
 				</article>
 			</li>
 			<% end_loop %>

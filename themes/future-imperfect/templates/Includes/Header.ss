@@ -15,7 +15,6 @@
 					$SearchForm
 				</li>
 			<% end_if %>
-
 		</ul>
 	</nav>
 </header>
