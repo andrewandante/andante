@@ -7,7 +7,7 @@
 		"silverstripe/framework": "4.0.x-dev",
 		"silverstripe/reports": "4.0.x-dev",
 		"silverstripe/siteconfig": "4.0.x-dev",
-		"silverstripe/blog": "dev-FIX/datepicker",
+		"silverstripe/blog": "master",
 		"silverstripe/comments": "master",
 		"colymba/gridfield-bulk-editing-tools": "^3.0",
 		"jonom/silverstripe-betternavigator": "dev-UPGRADE/ss4-compatiblilty",
@@ -17,10 +17,6 @@
 		{
 			"type": "vcs",
 			"url": "git@github.com:andrewandante/silverstripe-betternavigator.git"
-		},
-		{
-			"type": "vcs",
-			"url": "git@github.com:andrewandante/silverstripe-blog.git"
 		}
 	],
 	"require-dev": {

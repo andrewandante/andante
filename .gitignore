@@ -7,6 +7,7 @@ _ss_environment.php
 
 # ignore build tools
 /tools/phing-metadata
+/themes/future-imperfect/.sass-cache/
 
 # ignore composer vendor folder
 /vendor/
@@ -24,6 +25,7 @@ _ss_environment.php
 /betternavigator/
 /asset-admin/
 /graphql/
+/silverstripe-twitter/
 
 # ignore assets
 /assets/

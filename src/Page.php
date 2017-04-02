@@ -22,8 +22,11 @@ class PageController extends ContentController {
 	private static $allowed_actions = array (
 	);
 
-	public function init() {
+	protected function init() {
 		parent::init();
+//		$response = $this->postTweet("Testing2.", "https://www.atawalkingspeed.com/blog/by-way-of-introduction");
+//		var_dump($response);
+//		die();
 	}
 
 	/**

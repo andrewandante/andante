@@ -1,14 +1,14 @@
 ---
 Name: mysite
-After:
-  - 'framework/*'
-  - 'cms/*'
 ---
 # YAML configuration for SilverStripe
 # See http://doc.silverstripe.org/framework/en/topics/configuration
 # Caution: Indentation through two spaces, not tabs
 SilverStripe\View\SSViewer:
-  theme: 'future-imperfect'
+  theme_enabled: true
+  themes:
+    - 'future-imperfect'
+    - '$default'
 SilverStripe\Dev\Debug:
   friendly_error_httpcode: true
 SilverStripe\SiteConfig\SiteConfig:
