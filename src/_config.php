@@ -17,12 +17,7 @@ require_once('conf/ConfigureFromEnv.php');
 
 \SilverStripe\ORM\Search\FulltextSearchable::enable();
 
-if (Director::isLive()) {
-	Director::forceSSL();
-	Director::forceWWW();
-}
 global $databaseConfig;
-
 
 TinyMCEConfig::get('cms')
 	->setOption('font_formats', 'Nixie One=Nixie One,cursive;')
