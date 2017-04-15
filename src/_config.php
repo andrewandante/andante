@@ -15,13 +15,14 @@ i18n::set_locale('en_US');
 
 require_once('conf/ConfigureFromEnv.php');
 
-\SilverStripe\ORM\Search\FulltextSearchable::enable();
+//\SilverStripe\ORM\Search\FulltextSearchable::enable();
 
 global $databaseConfig;
 
 TinyMCEConfig::get('cms')
-	->setOption('font_formats', 'Nixie One=Nixie One,cursive;')
-	->setOption('content_css', 'framework/admin/client/dist/styles/editor.css, themes/future-imperfect/css/editor.css')
+	->setOptions([
+		'content_style' => '@import url("//fonts.googleapis.com/css?family=Nixie+One"); .typography .nixieone {font-family: \'Nixie One\', cursive;}',
+		'font_formats' => 'Nixie One=Nixie One,cursive;',
+	])
 	->enablePlugins(['textcolor', 'colorpicker'])
 	->addButtonsToLine(2, ['forecolor', 'backcolor', 'fontselect']);
-

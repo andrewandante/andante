@@ -1,5 +1,5 @@
 ---
-Name: mysite
+Name: src
 ---
 # YAML configuration for SilverStripe
 # See http://doc.silverstripe.org/framework/en/topics/configuration
@@ -8,6 +8,7 @@ SilverStripe\View\SSViewer:
   theme_enabled: true
   themes:
     - 'future-imperfect'
+    - 'new-brew'
     - '$default'
 SilverStripe\Dev\Debug:
   friendly_error_httpcode: true
@@ -17,6 +18,12 @@ SilverStripe\SiteConfig\SiteConfig:
 SilverStripe\Blog\Model\BlogPost:
   extensions:
     - BlogPostExtension
+SilverStripe\Blog\Model\Blog:
+  extensions:
+    - BlogExtension
+  blog_themes:
+    - 'future-imperfect'
+    - 'new-brew'
 SilverStripe\CMS\Model\SiteTree:
   extensions:
     - SilverStripe\Comments\Extensions\CommentsExtension

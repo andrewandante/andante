@@ -6,6 +6,7 @@ use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\TextareaField;
 use SilverStripe\Forms\TextField;
 use SilverStripe\SiteConfig\SiteConfig;
+use SilverStripe\View\SSViewer;
 
 class BlogPostExtension extends Extension {
 
@@ -45,4 +46,9 @@ class BlogPostExtension extends Extension {
 			}
 		}
 	}
+
+	public function getBlogTheme() {
+		return $this->owner->Parent()->BlogTheme;
+	}
+
 }
