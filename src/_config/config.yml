@@ -35,3 +35,6 @@ SilverStripe\CMS\Model\SiteTree:
 SilverStripe\Comments\Controllers\CommentingController:
   extensions:
     - CommentExtension
+SilverStripe\Security\Member:
+  extensions:
+    - SilverStripe\Twitter\Extensions\TwitterSiteConfig

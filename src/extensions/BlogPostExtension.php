@@ -1,14 +1,17 @@
 <?php
 
+use SilverStripe\Blog\Model\BlogPost;
+use SilverStripe\CMS\Model\SiteTreeExtension;
 use SilverStripe\Core\Extension;
 use SilverStripe\Forms\CheckboxField_Readonly;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\TextareaField;
 use SilverStripe\Forms\TextField;
+use SilverStripe\ORM\DataExtension;
 use SilverStripe\SiteConfig\SiteConfig;
 use SilverStripe\View\SSViewer;
 
-class BlogPostExtension extends Extension {
+class BlogPostExtension extends DataExtension {
 
 	private static $db = [
 		'TrackEmbedLink' => 'HTMLText',
@@ -33,22 +36,18 @@ class BlogPostExtension extends Extension {
 		return $this->owner->Tags()->exclude('Title', 'feature');
 	}
 
+	public function getBlogTheme() {
+		return $this->owner->Parent()->BlogTheme;
+	}
+
 	public function onBeforePublish() {
-		$this->owner->onBeforePublish();
-		if (!empty(SiteConfig::current_site_config()->TwitterUsername)
-			&& !empty(SiteConfig::current_site_config()->TwitterAppAccessToken)
-			&& !$this->owner->HasBeenTweeted
-		) {
+		if (!$this->owner->HasBeenTweeted) {
 			$service = new \SilverStripe\Twitter\Services\TwitterService();
-			$tweet = $service->updateStatus($this->owner->Title . " " . $this->owner->Link());
+			$tweet = $service->updateStatus($this->owner->Title . ": " . $this->owner->Link());
 			if ($tweet->id) {
 				$this->owner->HasBeenTweeted = true;
 			}
 		}
-	}
-
-	public function getBlogTheme() {
-		return $this->owner->Parent()->BlogTheme;
 	}
 
 }

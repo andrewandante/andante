@@ -28,9 +28,6 @@ class PageController extends ContentController {
 
 	protected function init() {
 		parent::init();
-//		$response = $this->postTweet("Testing2.", "https://www.atawalkingspeed.com/blog/by-way-of-introduction");
-//		var_dump($response);
-//		die();
 
 		if ($this->nonDefaultTheme()) {
 			SSViewer::set_themes([$this->nonDefaultTheme(), '$default']);
@@ -54,8 +51,7 @@ class PageController extends ContentController {
 
 	protected function nonDefaultTheme() {
 		$theme = null;
-		if (($this instanceof BlogController && $this->BlogTheme !== null) ||
-			($this instanceof BlogPostController && $this->Parent()->BlogTheme !== null)) {
+		if ($this->BlogTheme !== null) {
 			$theme = Config::inst()->get(Blog::class, 'blog_themes')[$this->BlogTheme];
 		}
 		return $theme;

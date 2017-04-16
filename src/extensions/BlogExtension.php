@@ -1,11 +1,13 @@
 <?php
 
 use SilverStripe\Blog\Model\Blog;
+use SilverStripe\CMS\Model\SiteTreeExtension;
 use SilverStripe\Core\Config\Config;
 use SilverStripe\Core\Extension;
 use SilverStripe\Forms\DropdownField;
+use SilverStripe\ORM\DataExtension;
 
-class BlogExtension extends Extension {
+class BlogExtension extends SiteTreeExtension {
 
 	private static $blog_themes = [];
 

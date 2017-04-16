@@ -11,12 +11,17 @@
 		"silverstripe/comments": "master",
 		"colymba/gridfield-bulk-editing-tools": "^3.0",
 		"jonom/silverstripe-betternavigator": "dev-UPGRADE/ss4-compatiblilty",
-		"silverstripe/asset-admin": "1.0.x-dev"
+		"silverstripe/asset-admin": "1.0.x-dev",
+		"silverstripe/twitter": "dev-feature/tweetbot"
 	},
 	"repositories": [
 		{
 			"type": "vcs",
 			"url": "git@github.com:andrewandante/silverstripe-betternavigator.git"
+		},
+		{
+			"type": "vcs",
+			"url": "git@github.com:andrewandante/silverstripe-twitter.git"
 		}
 	],
 	"require-dev": {
