@@ -25,7 +25,11 @@ _ss_environment.php
 /betternavigator/
 /asset-admin/
 /graphql/
-/silverstripe-twitter/
+/twitter/
+/campaign-admin/
+/silverstripe-admin/
+/silverstripe-assets/
+/versioned/
 
 # ignore assets
 /assets/
