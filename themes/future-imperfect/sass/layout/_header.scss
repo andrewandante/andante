@@ -11,6 +11,10 @@
 
 		.featured-post-image {
 			border-bottom: none;
+
+			img {
+				max-width: 100%;
+			}
 		}
 	}
 
