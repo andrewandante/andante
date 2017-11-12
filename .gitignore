@@ -25,7 +25,7 @@ _ss_environment.php
 /betternavigator/
 /asset-admin/
 /graphql/
-/twitter/
+# for hacking reasons we comment this out/twitter/
 /campaign-admin/
 /silverstripe-admin/
 /silverstripe-assets/

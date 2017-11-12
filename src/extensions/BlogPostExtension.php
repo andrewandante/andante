@@ -42,7 +42,7 @@ class BlogPostExtension extends DataExtension {
 
 	public function onBeforePublish() {
 		if (!$this->owner->HasBeenTweeted) {
-			$service = new \TractorCow\Twitter\Services\TwitterService();
+			$service = new \SilverStripe\Twitter\Services\TwitterService();
 			$tweet = $service->updateStatus($this->owner->Title . ": " . \SilverStripe\Control\Director::absoluteURL($this->owner->Link()));
 			if ($tweet->id) {
 				$this->owner->HasBeenTweeted = true;
