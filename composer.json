@@ -3,23 +3,17 @@
 	"description": "The SilverStripe Framework Installer",
 	"require": {
 		"php": ">=5.3.3",
-		"silverstripe/cms": "4.0.x-dev",
-		"silverstripe/framework": "4.0.x-dev",
-		"silverstripe/reports": "4.0.x-dev",
-		"silverstripe/siteconfig": "4.0.x-dev",
-		"silverstripe/blog": "master",
-		"silverstripe/comments": "master",
+		"silverstripe/cms": "^4.0",
+		"silverstripe/framework": "^4.0",
+		"silverstripe/reports": "^4.0",
+		"silverstripe/siteconfig": "^4.0",
+		"silverstripe/blog": "*",
+		"silverstripe/comments": "*",
 		"colymba/gridfield-bulk-editing-tools": "^3.0",
-		"jonom/silverstripe-betternavigator": "dev-UPGRADE/ss4-compatiblilty",
-		"silverstripe/asset-admin": "1.0.x-dev",
-		"silverstripe/admin": "dev-master"
+		"jonom/silverstripe-betternavigator": "*",
+		"silverstripe/asset-admin": "^1.0",
+		"silverstripe/admin": "*"
 	},
-	"repositories": [
-		{
-			"type": "vcs",
-			"url": "git@github.com:andrewandante/silverstripe-betternavigator.git"
-		}
-	],
 	"require-dev": {
 		"phpunit/PHPUnit": "~3.7@stable"
 	},
