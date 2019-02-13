@@ -12,28 +12,9 @@ _ss_environment.php
 # ignore composer vendor folder
 /vendor/
 
-# ignore composer-required modules
-/blog/
-/cms/
-/comments/
-/framework/
-/gridfield-bulk-editing-tools/
-/lumberjack/
-/reports/
-/siteconfig/
-/tagfield/
-/betternavigator/
-/asset-admin/
-/graphql/
-# for hacking reasons we comment this out/twitter/
-/campaign-admin/
-/silverstripe-admin/
-/silverstripe-assets/
-/versioned/
-
 # ignore assets
 /assets/
-
+/resources/
 # ignore phpstorm stuff
 /.idea/
 

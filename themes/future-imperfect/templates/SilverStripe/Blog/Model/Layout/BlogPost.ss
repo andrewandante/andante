@@ -1,4 +1,4 @@
-<% require themedCSS('blog', 'blog') %>
+<% require themedCSS('main', 'blog') %>
 
 <div class="blog-entry content-container <% if $SideBarView %>unit size3of4<% end_if %>">
 	<article class="post">
@@ -24,10 +24,10 @@
 			</div>
 		<% end_if %>
 
-		<% include EntryMeta %>
+		<% include SilverStripe\Blog\EntryMeta %>
 
 		$CommentsForm
 	</article>
 </div>
 
-<% include BlogSideBar %>
+<% include SilverStripe\Blog\BlogSideBar %>
