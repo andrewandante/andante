@@ -1,9 +1,9 @@
-<% require themedCSS('blog', 'blog') %>
+<% require themedCSS('main', 'blog') %>
 
 <div class="blog-entry content-container <% if $SideBarView %>unit size3of4<% end_if %>">
 	<article>
 
-	<% include MemberDetails %>
+	<% include SilverStripe\Blog\MemberDetails %>
 
 	<% if $PaginatedList.Exists %>
 		<h3>Posts by $CurrentProfile.FirstName $CurrentProfile.Surname</h3>
@@ -34,9 +34,9 @@
 	$Form
 
 	<% with $PaginatedList %>
-		<% include Pagination %>
+		<% include SilverStripe\Blog\Pagination %>
 	<% end_with %>
 	</article>
 </div>
 
-<% include BlogSideBar %>
+<% include SilverStripe\Blog\BlogSideBar %>
